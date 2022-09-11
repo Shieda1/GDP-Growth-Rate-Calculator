@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GDP Growth Rate Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="GDPgrowthRadio" name="variables" checked>
+  <label for="GDPgrowthRadio">GDP growth</label>
+
+  <input type="radio" id="GDPinthecurrentperiodRadio" name="variables">
+  <label for="GDPinthecurrentperiodRadio">GDP in the current period</label>
+
+  <input type="radio" id="GDPinthepreviousperiodRadio" name="variables" disabled>
+  <label for="GDPinthepreviousperiodRadio">GDP in the previous period</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">GDP in the current period</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">GDP in the previous period</label>
+  <input type="number" id="v2"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
